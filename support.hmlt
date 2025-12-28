@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jobhook Support</title>
+  <meta name="description" content="Official Jobhook support page. Contact support, report issues, request help, and find policy links." />
+  <style>
+    :root { --bg:#0b1220; --card:#111a2e; --text:#e9eefc; --muted:#b7c2e6; --accent:#4ea1ff; --line:#223055; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: linear-gradient(180deg, var(--bg), #050813); color: var(--text); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px 60px; }
+    .top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+    .badge { display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color: var(--muted); font-size:13px; }
+    h1 { margin: 12px 0 8px; font-size: 34px; }
+    p { color: var(--muted); line-height: 1.6; }
+    .grid { display:grid; grid-template-columns: 1fr; gap:14px; margin-top:18px; }
+    @media (min-width: 820px){ .grid { grid-template-columns: 1.2fr 0.8fr; } }
+    .card { background: rgba(17,26,46,0.92); border:1px solid var(--line); border-radius:16px; padding:18px; }
+    .card h2 { margin:0 0 8px; font-size:18px; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .btn { display:inline-block; text-decoration:none; color: var(--text); border:1px solid var(--line); padding:10px 12px; border-radius:12px; }
+    .btn:hover { border-color: var(--accent); }
+    .k { color: var(--text); font-weight: 600; }
+    .kv { margin: 6px 0; }
+    .small { font-size: 13px; color: var(--muted); }
+    .list { margin:10px 0 0; padding-left: 18px; color: var(--muted); }
+    .hr { height:1px; background: var(--line); margin:14px 0; }
+    footer { margin-top:18px; color: var(--muted); font-size:13px; }
+    code { background:#0a1022; padding:2px 6px; border:1px solid var(--line); border-radius:8px; color: var(--text); }
+    input, textarea { width:100%; box-sizing:border-box; margin-top:8px; padding:10px; border-radius:12px; border:1px solid var(--line); background:#0a1022; color:var(--text); }
+    textarea { min-height:110px; resize:vertical; }
+    .note { background:#0a1022; border:1px dashed var(--line); border-radius:14px; padding:12px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <span class="badge">Official Support • Jobhook</span>
+      <span class="badge">Last updated: <span id="lastUpdated"></span></span>
+    </div>
+
+    <h1>Jobhook Support</h1>
+    <p>
+      Need help with Jobhook? Use the contact options below to get support, report bugs, request account help,
+      or ask questions about policies. We respond as fast as possible.
+    </p>
+
+    <div class="grid">
+      <!-- MAIN SUPPORT CARD -->
+      <div class="card">
+        <h2>Contact Support</h2>
+        <p class="kv"><span class="k">Support Email:</span> <a class="btn" href="mailto:veltrix033@gmail.com?subject=Jobhook%20Support%20Request">veltrix033@gmail.com</a></p>
+        <p class="small">
+          (Tip: include your device type, OS version, and screenshots if possible.)
+        </p>
+
+        <div class="hr"></div>
+
+        <h2>What to include in your message</h2>
+        <ul class="list">
+          <li>What you were trying to do</li>
+          <li>What went wrong (error message if any)</li>
+          <li>Your phone model + OS version (iOS/Android)</li>
+          <li>App version (if you know it)</li>
+          <li>Screenshots / screen recording (optional but helpful)</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2>Quick Links</h2>
+        <div class="row">
+          <a class="btn" href="./privacy-policy.html">Privacy Policy</a>
+          <a class="btn" href="./terms-of-service.html">Terms of Service</a>
+          <a class="btn" href="./index.html">Legal Home</a>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2>Common issues</h2>
+        <ul class="list">
+          <li><span class="k">Login / account:</span> Tell us the email you used and what happens when you try to sign in.</li>
+          <li><span class="k">Profile / resume:</span> Include whether you uploaded a file and if it shows on web/mobile.</li>
+          <li><span class="k">Job application:</span> Include the job title and what happens when you tap Apply.</li>
+          <li><span class="k">Bug report:</span> Describe the steps to reproduce the issue.</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <div class="note">
+          <div class="k">Important:</div>
+          <div>
+            Jobhook may request additional information to verify your account before making changes.
+            Never share your password. Support will never ask for your password.
+          </div>
+        </div>
+      </div>
+
+      <!-- APP INFO CARD -->
+      <div class="card">
+        <h2>App & Publisher Info</h2>
+        <p class="kv"><span class="k">App Name:</span> Jobhook</p>
+        <p class="kv"><span class="k">Publisher:</span> Veltrix</p>
+        <p class="kv"><span class="k">Support Hours:</span> Mon–Fri (responses ASAP)</p>
+        <p class="kv"><span class="k">Expected Response Time:</span> 24–72 hours</p>
+
+        <div class="hr"></div>
+
+        <h2>Report a policy concern</h2>
+        <p class="small">
+          For privacy or legal questions, email:
+        </p>
+        <p class="kv">
+          <a class="btn" href="mailto:veltrix033@gmail.com?subject=Jobhook%20Privacy%20or%20Legal%20Question">veltrix033@gmail.com</a>
+        </p>
+
+        <div class="hr"></div>
+
+        <h2>For App Review Teams (Apple/Google)</h2>
+        <p class="small">
+          If you are reviewing Jobhook and need additional information, please contact:
+        </p>
+        <p class="kv">
+          <a class="btn" href="mailto:veltrix033@gmail.com?subject=Jobhook%20App%20Review%20Support">veltrix033@gmail.com</a>
+        </p>
+        <p class="small">
+          This page is publicly accessible via HTTPS and provides support contact information as required.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Jobhook. All rights reserved. •
+      <a href="./privacy-policy.html" style="color:var(--accent); text-decoration:none;">Privacy</a> •
+      <a href="./terms-of-service.html" style="color:var(--accent); text-decoration:none;">Terms</a>
+    </footer>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    document.getElementById("lastUpdated").textContent = now.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
+  </script>
+</body>
+</html>
