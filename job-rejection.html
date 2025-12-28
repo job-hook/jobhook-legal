@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jobhook — Job Rejection Notice</title>
+  <meta name="description" content="Explanation page for why a job post was rejected on Jobhook." />
+  <style>
+    :root { --bg:#0b1220; --card:#111a2e; --text:#e9eefc; --muted:#b7c2e6; --accent:#4ea1ff; --line:#223055; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: linear-gradient(180deg, var(--bg), #050813); color: var(--text); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px 60px; }
+    .badge { display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color: var(--muted); font-size:13px; }
+    h1 { margin: 12px 0 8px; font-size: 30px; }
+    p { color: var(--muted); line-height: 1.6; }
+    .card { background: rgba(17,26,46,0.92); border:1px solid var(--line); border-radius:16px; padding:18px; margin-top:14px; }
+    .card h2 { margin:0 0 8px; font-size:18px; }
+    .list { margin:10px 0 0; padding-left: 18px; color: var(--muted); }
+    .hr { height:1px; background: var(--line); margin:14px 0; }
+    .btn { display:inline-block; text-decoration:none; color: var(--text); border:1px solid var(--line); padding:10px 12px; border-radius:12px; }
+    .btn:hover { border-color: var(--accent); }
+    code { background:#0a1022; padding:2px 6px; border:1px solid var(--line); border-radius:8px; color: var(--text); }
+    .reasonBox { background:#0a1022; border:1px dashed var(--line); border-radius:14px; padding:12px; color: var(--text); }
+    .small { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Jobhook • Job Post Review</span>
+
+    <h1>Job Post Rejected</h1>
+    <p>
+      Your job post was reviewed and could not be approved at this time. Don’t worry — most rejections are easy to fix.
+      Please review the reason below, update your job post, and submit again.
+    </p>
+
+    <div class="card">
+      <h2>Rejection Reason</h2>
+      <div class="reasonBox" id="reasonBox">No reason provided.</div>
+      <p class="small" style="margin-top:10px;">
+        If you opened this link from the app, the reason should appear above. If it does not, contact support.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Common reasons we reject job posts</h2>
+      <ul class="list">
+        <li><b>Missing details:</b> salary, location, job type, or requirements not clear.</li>
+        <li><b>Misleading information:</b> unclear pay, unrealistic promises, or false claims.</li>
+        <li><b>Spam or duplicate posts:</b> repeated postings with the same content.</li>
+        <li><b>Contact info in the job description:</b> phone numbers/emails in the post (use the app messaging flow instead).</li>
+        <li><b>Discrimination or restricted content:</b> content that violates policies or local laws.</li>
+        <li><b>Low quality formatting:</b> all caps, symbols, or unreadable text.</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>How to fix and resubmit</h2>
+      <ul class="list">
+        <li>Edit the job post and add missing fields.</li>
+        <li>Make salary and responsibilities clear.</li>
+        <li>Remove personal contact info from the description.</li>
+        <li>Submit again for review.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Need help?</h2>
+      <p>Contact Jobhook Support:</p>
+      <a class="btn" href="mailto:veltrix033@gmail.com?subject=Jobhook%20Job%20Rejection%20Help">veltrix033@gmail.com</a>
+      <div class="hr"></div>
+      <a class="btn" href="./support.html">Support Page</a>
+      <a class="btn" href="./privacy-policy.html">Privacy Policy</a>
+      <a class="btn" href="./terms-of-service.html">Terms of Service</a>
+    </div>
+
+    <script>
+      // Read reason from query params: ?reason=...
+      const params = new URLSearchParams(window.location.search);
+      const reason = params.get("reason");
+      const box = document.getElementById("reasonBox");
+      if (reason && reason.trim().length > 0) {
+        box.textContent = decodeURIComponent(reason);
+      }
+    </script>
+  </div>
+</body>
+</html>
